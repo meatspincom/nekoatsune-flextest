@@ -1,0 +1,137 @@
+@font-face{
+    font-family: PT Sans;
+    src: url(../fonts/Sans-Web-Regular.ttf);
+    font-weight: normal;
+}
+
+
+@font-face{
+    font-family: PT Sans;
+    src: url(../fonts/Sans-Web-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face{
+    font-family: OpenSans;
+    src: url(../fonts/OpenSans-Light.ttf);
+    font-weight: light;
+}
+
+#wrapper{
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+body {
+    background: url(../img/bg.jpg); 
+}
+a, img, h1, h2, h3, p, li {
+    display: block;
+}
+img {
+    object-fit: contain;
+}
+
+body, ul, header, li, div, p, h3, h2 {
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    color: #000;
+    display: block;
+    text-decoration: none;
+    font-family: PT Sans;
+    font-weight: bold;
+    font-size: 30px;
+}
+a:focus{
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    background: #ffdbac;
+    margin: 0 auto;
+}
+#nav {
+    margin: 0 auto;
+    max-width: 960px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+}
+#nav li:nth-child(1){
+    margin-right: auto;
+}
+container {
+    display: flex;
+    background-color: #f3e9e1;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    margin-top: 5px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.table-cell{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 170px;
+    height: 180px;;
+    background-color: #fff;
+}
+h2{
+    font-family: PT Sans;
+    font-weight: normal;
+    font-size: 1.5em;
+}
+h3{
+    font-family: PT Sans;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.cat-ava{
+    margin-top: 8px;
+}
+.good-needed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer {
+    display: flex;
+    margin: 0 auto;
+    justify-content: flex-end;
+    width:100%;
+    background-color: #ffdbac;
+}
+p{  
+    margin-right: 20px;
+    font-family: OpenSans;
+    font-weight: light;
+    font-size: 1em;
+}
+#footer-width{
+    max-width: 1000px;
+}
+@media only screen and (max-width : 560px) {
+
+	#nav li:nth-child(2){
+        display: none;
+    }
+    #nav li:nth-child(1){
+        margin: 0 auto;
+    }
+
+}
